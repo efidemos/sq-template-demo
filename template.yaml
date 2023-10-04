@@ -27,10 +27,6 @@ spec:
           title: Description
           type: string
           description: Describe your project
-        repoproject:
-          title: Github user
-          type: string
-          description: Github user, i.e. tanuuidp in github.com/tanuuidp/tanuu. This is where the tempalated apps will be created.
         owner:
           title: Owner
           type: string
@@ -48,7 +44,7 @@ spec:
         values:
           component_id: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
-          destination: https://github.com/${{ parameters.repoproject }}/${{ parameters.component_id }}
+          destination: https://github.com/tanuudemo/${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
 
     - id: publish
@@ -57,7 +53,7 @@ spec:
       input:
         allowedHosts: ["github.com"]
         description: This is ${{ parameters.component_id }}
-        repoUrl: 'github.com?repo=${{ parameters.component_id }}&owner=${{ parameters.repoproject }}'
+        repoUrl: 'github.com?repo=${{ parameters.component_id }}&owner=tanuudemo'
         defaultBranch: main
         repoVisibility: public
 
