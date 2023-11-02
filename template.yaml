@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: techdocs-demo-project
-  title: Test project with TechDocs
+  name: techdocs-demo
+  title: Test python project with TechDocs
   description: Create a Python project with a CI/CD pipeline and production version of TechDocs
   tags:
     - recommended
