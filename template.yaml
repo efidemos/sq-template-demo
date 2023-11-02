@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: techdocs-demo
-  title: Test python project with TechDocs
+  name: techdocs-demo-integrated
+  title: Test python project with integrated TechDocs
   description: Create a Python project with a CI/CD pipeline and production version of TechDocs
   tags:
     - recommended
@@ -43,7 +43,7 @@ spec:
         values:
           component_id: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
-          destination: https://github.com/tanuudemo/${{ parameters.component_id }}
+          destination: https://github.com/efidemos/${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
 
     - id: publish
