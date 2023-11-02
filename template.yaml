@@ -16,7 +16,6 @@ spec:
         - component_id
         - description
         - owner
-        - repoproject
       properties:
         component_id:
           title: Name
