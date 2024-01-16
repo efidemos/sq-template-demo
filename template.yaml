@@ -1,14 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: techdocs
-  title: Python project with TechDocs
-  description: Create a Python project with a CI/CD pipeline and production version of TechDocs
+  name: sonarqube
+  title: Python project with SonarQube
+  description: Create a Python project with a CI/CD pipeline including SonarQube analysis
   tags:
     - recommended
     - python
 spec:
-  owner: admin
+  owner: CNCF
   type: repository
   parameters:
     - title: Provide some simple information
