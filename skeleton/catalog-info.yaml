@@ -9,6 +9,6 @@ metadata:
     github.com/project-slug: efidemos/${{values.component_id }}
     sonarqube.org/project-key: ${{values.component_id }}
 spec:
-  type: repository
+  type: sq-repository
   lifecycle: experimental
   owner: ${{values.owner | dump}}
